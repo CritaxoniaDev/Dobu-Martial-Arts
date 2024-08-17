@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/Module2/images/sign-up-background-form.jpg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 330px;
+  margin: auto;
+  margin-top: 10%;
+  padding: 5px;
+  backdrop-filter: blur(17px) saturate(200%);
+  -webkit-backdrop-filter: blur(17px) saturate(200%);
+  background-color: rgba(89, 89, 89, 0.44);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  color: black;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.form {
+  padding: 15px;
+}
+
+.form-group {
+  position: relative;
+  padding: 20px 0;
+  margin: auto;
+  max-width: 100%;
+}
+
+.form-group input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.4px solid #d8d7d7;
+  font-size: 18px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+.form-group label {
+  color: #f0eaea;
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  transform: translateY(30px);
+  transition: all 0.2s ease-in-out;
+  left: 0px;
+}
+
+.form-group input:valid,
+.form-group input:focus {
+  border-bottom-color: black;
+  outline: none;
+}
+
+.form-group input:valid+label,
+.form-group input:focus+label {
+  color: black;
+  font-size: 14px;
+  transform: translateY(0);
+}
+
+.submit {
+  background: rgb(218 51 3);
+  padding: 7px 0;
+  outline: none;
+  font-size: 18px;
+  font-family: serif;
+  width: 100%;
+  margin: 17px 0;
+  cursor: pointer;
+  color: rgb(226, 224, 224);
+  border-radius: 5px;
+  transition: 0.1s;
+  border: 1px solid rgb(218 51 3);
+}
+
+.submit:hover {
+  background: rgba(216, 214, 214, 0.301);
+  color: rgb(218 51 3);
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  text-align: center;
+}
+
+.row a {
+  color: rgb(218 51 3);
+}
+
+a:hover {
+  color: white;
+}
+
+.last {
+  text-align: center;
+  padding: 5px;
+}
+
+.last a {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #66C1E5;
+}
+
+@media screen and (max-width: 600px) {
+  .form-group label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 45%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    max-width: 75%;
+    margin-top: 25%;
+  }
+
+  .submit {
+    padding: 0;
+  }
+
+  .row {
+    font-size: 13px;
+  }
+
+  .last {
+    font-size: 7px;
+  }
+}
+
+.page-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #272727;
+  z-index: 1000;
+
+  .txt {
+    color: #666;
+    text-align: center;
+    top: 40%;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+}
+
+.spinner {
+  position: relative;
+  top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0)
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}

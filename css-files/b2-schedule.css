@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Noto+Sans+JP:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/Module2/images/background-img-schedule.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table-container {
+    display: flex;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(31, 30, 30);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(17px) saturate(200%);
+    background-color: rgba(190, 190, 190, 0.44);
+    font-size: 60px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+table {
+    width: 80%;
+    margin-left: 100px;
+    margin-right: 80px;
+    border-collapse: collapse;
+    margin-top: -5px;
+}
+
+td {
+    border: 3.5px solid black;
+    text-align: center;
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(17px) saturate(200%);
+    background-color: rgba(190, 190, 190, 0.44);
+    padding: 12px;
+}
+
+.tdata {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.trows {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#no-data {
+    background-color: rgb(255, 79, 79);
+}
+
+@media (max-width: 780px) {
+    table {
+        overflow-x: auto;
+        border: 2px solid black;
+        display: block;
+        margin-top: -15px;
+    }
+
+    th,
+    td {
+        min-width: 120px;
+    }
+
+    .table-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tdata {
+        font-size: 25px;
+    }
+
+    .trows {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+}
+
+.page-loader {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #272727;
+    z-index: 1000;
+
+    .txt {
+        color: #666;
+        text-align: center;
+        top: 40%;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
+
+.spinner {
+    position: relative;
+    top: 35%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}

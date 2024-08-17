@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/Module2/1-header&Footer/head-foot.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="/Module2/css-files/c-instructors.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu</title>
+  <link rel="icon" href="/Module2/images/IconLogo.png" type="image/png">
+</head>
+<header id="header"></header>
+
+<body>
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <div class="txt">Loading...</div>
+  </div>
+  <div class="container">
+    <h3>The DoBu Martial Arts</h3><br>
+    <h1>Instructors</h1>
+  </div>
+  <div id="parent1">
+    <div id="pic1"></div>
+    <div id="cont">
+      <p id="heading">
+        <span id=sp1>Mauricio Gomez</span><br>
+        <span id="sp2">Gym Owner/Head of Martial Arts/Coach</span>
+        <br><br>
+        <span id="sp3">
+          • Coaches in all Martial Arts.<br>
+          • 4th Dan in Blackbelt Judo.<br>
+          • 3rd Dan in Blackbelt Jiu-Jitsu.<br>
+          • 1st Dan in Blackbelt Karate.<br>
+          • Accredited Muay Thai Coach.<br>
+        </span>
+      </p><br><br>
+      <a href="#">mauricio@dobu.com</a>
+    </div>
+  </div>
+  <div id="parent2">
+    <div id="pic2"></div>
+    <div id="cont">
+      <p id="heading">
+        <span id=sp1>Sarah Nova</span><br>
+        <span id="sp2">Assistant Martial Arts Coach</span>
+        <br><br>
+        <span id="sp3">
+          • 5th Dan Karate.<br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </span>
+      </p><br><br>
+      <a href="#">sarah@dobu.com</a>
+    </div>
+  </div>
+  <div id="parent3">
+    <div id="pic3"></div>
+    <div id="cont">
+      <p id="heading">
+        <span id=sp1>Guy Victory</span><br>
+        <span id="sp2">Assistant Martial Arts Coach</span>
+        <br><br>
+        <span id="sp3">
+          • 2nd Dan in Blackbelt Jiu-Jitsu<br>
+          • 1st Dan in Blackbelt Judo.<br>
+          <br>
+          <br>
+          <br>
+        </span>
+      </p><br><br>
+      <a href="#">guy@dobu.com</a>
+    </div>
+  </div>
+  <div id="parent4">
+    <div id="pic4"></div>
+    <div id="cont">
+      <p id="heading">
+        <span id=sp1>Morris Davis</span><br>
+        <span id="sp2">Assistant Martial Arts Coach</span>
+        <br><br>
+        <span id="sp3">
+          • Accredited Muay Thai Coach.<br>
+          • 3rd Dan in Blackbelt Karate.<br>
+          <br>
+          <br>
+          <br>
+        </span>
+      </p><br><br>
+      <a href="#">morris@dobu.com</a>
+    </div>
+  </div>
+  <div id="parent5">
+    <div id="pic5"></div>
+    <div id="cont">
+      <p id="heading">
+        <span id=sp1>Traci Santiago</span><br>
+        <span id="sp2">Fitness Coach</span>
+        <br><br>
+        <span id="sp3">
+          • BSc in Sports Science.<br>
+          • Qualified in Health Nutrition.<br>
+          • Specialises in devising strength and<br>
+          conditioning programs for combat athletes.<br>
+          <br>
+        </span>
+      </p><br><br>
+      <a href="#">traci@dobu.com</a>
+    </div>
+  </div>
+  <div id="parent6">
+    <div id="pic6"></div>
+    <div id="cont">
+      <p id="heading">
+        <span id=sp1>Harpreet Kaur</span><br>
+        <span id="sp2">Fitness Coach</span>
+        <br><br>
+        <span id="sp3">
+          • BSc in Physiotherapy.<br>
+          • MSc in Sports Science.<br>
+          <br>
+        </span>
+      </p><br><br>
+      <a href="#">harpreet@dobu.com</a>
+    </div>
+  </div>
+</body>
+<footer id="footer"></footer>
+<script>
+  $(document).ready(function () {
+    $('#header').load('1-header&footer/common-header.html');
+    $('#footer').load('1-header&footer/common-footer.html');
+  });
+</script>
+<script>
+  function hideLoader() {
+    $('.page-loader').fadeOut('slow');
+  }
+</script>
+
+<body onload="hideLoader()"></body>
+
+</html>

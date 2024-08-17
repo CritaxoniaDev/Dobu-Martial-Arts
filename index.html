@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/Module2/css-files/a-home-page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Module2/1-header&footer/head-foot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu</title>
+  <link rel="icon" href="../Module2/images/IconLogo.png" type="image/png">
+</head>
+<!--This is the jQuery header of the page-->
+<header id="header"></header>
+
+<!--This will do the loading animation of the page when it reloads-->
+<div class="page-loader">
+  <div class="spinner"></div>
+  <div class="txt">Loading...</div>
+</div>
+
+<body>
+  <!--This will slideshow the image background of the landing page-->
+  <ul class="slideshow">
+    <li>
+      <!--background img 1 -->>
+      <span class="img-bg-slide">Floor Mat area</span>
+    </li>
+    <li>
+      <!--background img 2 -->>
+      <span class="img-bg-slide">Gym</span>
+    </li>
+    <li>
+      <!--background img 3 -->>
+      <span class="img-bg-slide">Sauna</span>
+    </li>
+    <li>
+      <!--background img 4 -->>
+      <span class="img-bg-slide">Matress area</span>
+    </li>
+  </ul>
+  <!--Introduction of the page-->
+  <div class="intro">
+    <!--header 1-->
+    <h1 class="head1">
+      <span>Welcome To DoBu Martial Arts Gym & Fitness!</span>
+    </h1>
+    <!--Typing effect that prints different courses in the website-->
+    <div class="text">
+      <h2>And We Offer: <span class="type"></span>
+      </h2>
+    </div>
+    <!--header 2-->
+    <h2 class="head2">
+      Where our people trains and masters the mind and body with our martial arts and fitness classes.
+    </h2>
+    <!--enroll button-->
+    <a href="/Module2/d-membership-form.html" class="bn5" style="text-decoration: none; color: aliceblue;">Get
+      Started!</a>
+    <!--search bar that you can source faster in the website-->
+    <div class="search-bar">
+      <input type="text" id="search" name="search" placeholder="Anything you would like to know..">
+      <button type="submit" id="search-btn" class="search-icon">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <!--About us page-->
+    <div class="about-us">
+      <h2>About Us</h2>
+      <br>
+      <p>DoBu Martial Arts Gym is a place that where people train and master<br>
+        the mind and the body with our martial arts classes.<br>
+        <br>
+        We also offer all the variety of classes for all ages and fitness levels, and<br>
+        Our well skilled and trained and experienced instructors and <br>will guide you on your successful journey to
+        become a martial artist.
+      </p>
+    </div>
+    <!--Mission and Vision of the page-->
+    <div class="container">
+      <div class="mission">
+        <div class="left">
+          <h1>Mission Statement</h1>
+          <p>At DoBu Martial Arts Gym & Fitness, our mission is to provide a welcoming and exclusive environment where
+            people of all ages and fitness levels can train and master their mind and body through our diverse range of
+            martial arts classes.</p>
+          <p>Our highly skilled and experienced instructors are dedicated to guiding each individual on their sucessful
+            journey to becoming a martial artist. We committed to fostering discipline, hardwork, self-confidence, and
+            personal growth in every student, while promoting a sense of community and a humble respect among our
+            members.</p>
+        </div>
+        <div class="right">
+          <img src="/Module2/images/Vision Background.jpg">
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="vision">
+        <div class="left">
+          <img src="/Module2/images/Mission Background.jpg">
+        </div>
+        <div class="right">
+          <h1>Vision Statement</h1>
+          <p>To be a Exclusive and Premiere world class martial arts gym that empowers individuals to achieve their full
+            potential in their mind and body through disciplined and guidance.</p>
+        </div>
+<!--This is the jQuery footer of the page-->
+<footer id="footer"></footer>
+
+<!--The typed script for the typing effect-->
+<script>
+  var typed = new Typed(".type", {
+    strings: ["Karate",
+      "Kids Karate",
+      "Jiu-Jitsu",
+      "Kids Jiu-Jitsu",
+      "Judo",
+      "Kids Judo",
+      "Muay Thai",
+      "Fitness Training"],
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+<!-- jQuery Script for the header and footer html file page-->
+<script>
+  $(document).ready(function () {
+    $('#header').load('1-header&footer/common-header.html');
+    $('#footer').load('1-header&footer/common-footer.html');
+  });
+</script>
+<!-- jQuery Script for the loading page-->
+<script>
+  function hideLoader() {
+    $('.page-loader').fadeOut('slow');
+  }
+</script>
+<!--When the page finishes loading, the loading animation will fade out slowly-->
+
+<body onload="hideLoader()"></body>
+
+</html>

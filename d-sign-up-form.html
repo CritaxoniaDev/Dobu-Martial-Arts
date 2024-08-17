@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="/Module2/js-files/sign-up.js"></script>
+  <link rel="stylesheet" href="/Module2/css-files/d-sign-up.css">
+  <link rel="stylesheet" href="/Module2/1-header&Footer/head-foot.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu</title>
+  <link rel="icon" href="/Module2/images/IconLogo.png" type="image/png">
+</head>
+<header id="header"></header>
+<div class="page-loader">
+  <div class="spinner"></div>
+  <div class="txt">Loading...</div>
+</div>
+
+<body>
+  <div class="signup_container">
+    <div class="signup_left">
+      <h1>Already Signed up?</h1>
+      <p>
+        Everyday, There are too many people wants to join this fitness and martial arts community.
+      </p>
+      <button type="submit" class="login_btn"><a href="/Module2/d-membership-form.html">log in</a></button>
+    </div>
+    <div class="signup_right">
+      <h1>Sign Up to DoBu Martial Arts</h1>
+      <p>
+        Let's train you all with our experienced instructors, but let me guide you to your <br />
+        first onboarding experience.
+      </p>
+      <form:form id="signupForm"First>
+        <div class="name_inputs">
+          <!-- first name -->
+          <div>
+            <label for="fname">First Name</label><br />
+            <input type="text" name="fname" placeholder="Your first name" class="fname" />
+          </div>
+          <!-- last name -->
+          <div>
+            <label for="lname">Last Name</label><br />
+            <input type="text" name="lname" placeholder="Your last name" class="lname" />
+          </div>
+        </div>
+        <!-- email -->
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" name="email" placeholder="Enter your email" />
+        </div>
+        <!-- password -->
+        <div>
+          <label for="password">Password</label><br />
+          <div class="password">
+            <input type="password" name="password" placeholder="Enter your password" />
+          </div>
+        </div>
+        <!-- checkbox -->
+        <div>
+          <span>
+            I accept DoBu Martial Arts
+            <a href="#">Terms & Conditions</a>
+          </span>
+        </div>
+        <button type="submit" class="signup_btn" onclick="validate()">sign up</button>
+      </form:form>
+      <br>
+      <br>
+    </div>
+  </div>
+</body>
+<footer id="footer"></footer>
+<script>
+  $(document).ready(function () {
+    $('#header').load('1-header&footer/common-header.html');
+    $('#footer').load('1-header&footer/common-footer.html');
+  });
+</script>
+<script>
+  function hideLoader() {
+    $('.page-loader').fadeOut('slow');
+  }
+</script>
+
+<body onload="hideLoader()"></body>
+
+</html>

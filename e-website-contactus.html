@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/Module2/1-header&Footer/head-foot.css">
+  <link rel="stylesheet" href="/Module2/css-files/e-contacts.css">
+  <link rel="icon" href="images/Default_martial_arts_logo_2_643e71ec-6a16-430c-8095-daa65d2d36e2_0.png"
+    type="image/png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu</title>
+  <link rel="icon" href="/Module2/images/IconLogo.png" type="image/png">
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <div class="txt">Loading...</div>
+  </div>
+  <header id="header"></header>
+  <div class="container">
+
+    <div class="row">
+      <h1 id="form">Contact Information</h1>
+      <div class="col-lg-8 col-lg-offset-2">
+        <br>
+        <p class="p-info">If you have any concerns or feedback just fill up this form. Thank you!</p>
+        <form id="contact-form" method="post" role="form">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">First Name *</label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="First name"
+                    required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name *</label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last name"
+                    required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="exapmle@gmail.com"
+                    required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_phone">Phone Number</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Contact number">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">Feedback *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Enter any Feedback.."
+                    rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" style="width: 50%; margin-left: 25%;"
+                  value="Submit">
+              </div>
+            </div>
+            <div class="row">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>
+      Address: 029 Main Street, Downtown Melbourne, Australia
+    </p>
+    <p>
+      Email: dobumartialarts@gmail.com
+    </p>
+    <p>
+      Phone: +61 3 1234 8765
+  </div>
+  <div class="header1">
+    <h1>You Can find us Here!</h1>
+  </div>
+  <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Main%20Street%20Melbourne+(DoBu%20Martial%20Arts)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+    href='https://maps-generator.com/'>Maps Generator</a>
+  </div>
+  <footer id="footer">
+    </foooter>
+    <script>
+      $(document).ready(function () {
+        $('#header').load('1-header&footer/common-header.html');
+        $('#footer').load('1-header&footer/common-footer.html');
+      });
+    </script>
+    <script>
+      function hideLoader() {
+        $('.page-loader').fadeOut('slow');
+      }
+    </script>
+
+    <body onload="hideLoader()"></body>
+</body>
+
+</html>

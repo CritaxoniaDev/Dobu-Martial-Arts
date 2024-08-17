@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <script src="/Module2/js-files/membership-form.js"></script>
+  <link rel="stylesheet" href="/Module2/css-files/d-memb-form.css">
+  <link rel="stylesheet" href="/Module2/1-header&Footer/head-foot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="header.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu</title>
+  <link rel="icon" href="/Module2/images/IconLogo.png" type="image/png">
+</head>
+<header id="header"></header>
+<div class="page-loader">
+  <div class="spinner"></div>
+  <div class="txt">Loading...</div>
+</div>
+
+<body>
+  <div class="intro">
+    <div class="container">
+      <div class="form">
+        <h3 class="title">Login to DoBu Martial Arts Gym</h3>
+        <form>
+          <div class="form-group">
+            <input type="text" required /><label>Username</label>
+          </div>
+          <div class="form-group">
+            <input type="password" required /><label>Password</label>
+          </div>
+          <input type="button" value="Sign In" class="submit" onclick="validateForm()">
+          <div class="row">
+            <p>Not Yet Registered? <a href="d-sign-up-form.html">Sign Up Here</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="last">
+        <a href="#">T&C</a>
+        <a href="#">Policy</a>
+      </div>
+    </div>
+  </div>
+  <footer id="footer"></footer>
+  <script>
+    $(document).ready(function () {
+      $('#header').load('1-header&footer/common-header.html');
+      $('#footer').load('1-header&footer/common-footer.html');
+    });
+  </script>
+  <script>
+    function hideLoader() {
+      $('.page-loader').fadeOut('slow');
+    }
+  </script>
+
+  <body onload="hideLoader()"></body>
+</body>
+
+</html>

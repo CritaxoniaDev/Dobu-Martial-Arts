@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/Module2/1-header&Footer/head-foot.css">
+  <link rel="stylesheet" href="/Module2/css-files/b-classes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu</title>
+  <link rel="icon" href="/Module2/images/IconLogo.png" type="image/png">
+</head>
+
+<body>
+  <!--This will do the loading animation of the page when it reloads-->
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <div class="txt">Loading...</div>
+  </div>
+  <!--This is the jQuery header of the page-->
+  <header id="header"></header>
+  <!--Container of the first 3 cards in the program-->
+  <div class="container-fluid">
+    <h1>Prices & Membership Options</h1>
+    <!--Container of the first 3 cards with a bootstrap code and a padding of 5-->
+    <div class="container p-5">
+      <div class="row">
+        <!--A bootstrap code that create a responsive grid layouts-->
+        <!--4 columns in large screens, 12 columns in Medium sized screens-->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <!--The height of each card is 100 with a shadow-->
+          <div class="card h-100 shadow-lg">
+            <!--Body of the card-->
+            <div class="card-body">
+              <div class="text-center p-3">
+                <h5 class="card-title">Basic</h5>
+                <small>Individual</small>
+                <br><br>
+                <span class="h2">£25.00</span>/per month
+                <br><br>
+              </div>
+            </div>
+            <!--Each list contains an SVG element checkmark icon-->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="check" viewBox="0 0 16 16">
+                  <!--Placed some svg links from a bootstrap code-->
+                  <path
+                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg> 1 Martial Art</li>
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="check" viewBox="0 0 16 16">
+                  <!--Placed some svg links from a bootstrap code-->
+                  <path
+                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg> 2 Sessions Per week</li>
+            </ul>
+            <div class="card-body text-center">
+              <!--The href button of the card-->
+              <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                  href="/Module2/d-sign-up-form.html">Enroll</a></button>
+            </div>
+          </div>
+        </div>
+        <!--A bootstrap code that create a responsive grid layouts-->
+        <!--4 columns in large screens, 12 columns in Medium sized screens-->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body">
+              <div class="text-center p-3">
+                <h5 class="card-title">Intermediate</h5>
+                <small>Individual</small>
+                <br><br>
+                <span class="h2">£35.00</span>/ per month
+                <br><br>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                  <!--Placed some svg links from a bootstrap code-->
+                  <path
+                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg> 1 Martial Art</li>
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                  <!--Placed some svg links from a bootstrap code-->
+                  <path
+                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg> 3 Sessions Per Week</li>
+            </ul>
+            <div class="card-body text-center">
+              <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                  href="/Module2/d-sign-up-form.html">Enroll</a></button>
+            </div>
+          </div>
+        </div>
+        <!--A bootstrap code that create a responsive grid layouts-->
+        <!--4 columns in large screens, 12 columns in Medium sized screens-->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body">
+              <div class="text-center p-3">
+                <h5 class="card-title">Advanced</h5>
+                <small>Individual</small>
+                <br><br>
+                <span class="h2">£45.00</span>/per month
+                <br><br>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                  <!--Placed some svg links from a bootstrap code-->
+                  <path
+                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg> Any 2 Martial Arts</li>
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                  <!--Placed some svg links from a bootstrap code-->
+                  <path
+                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg> 5 Sessions Per Week</li>
+            </ul>
+            <div class="card-body text-center">
+              <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                  href="/Module2/d-sign-up-form.html">Enroll</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Container of the Second 3 cards in the program-->
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <!--Container of the first 3 cards with a bootstrap code and a padding of 1-->
+        <div class="container p-1">
+          <div class="row">
+            <!--A bootstrap code that create a responsive grid layouts-->
+            <!--4 columns in large screens, 12 columns in Medium sized screens-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Elite</h5>
+                    <small>Individual</small>
+                    <br><br>
+                    <span class="h2">£60.00</span>/per month
+                    <br><br>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="check" viewBox="0 0 16 16">
+                      <!--Placed some svg links from a bootstrap code-->
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Unlimited Classes</li>
+                </ul>
+                <div class="card-body text-center">
+                  <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                      href="/Module2/d-sign-up-form.html">Enroll</a></button>
+                </div>
+              </div>
+            </div>
+            <!--A bootstrap code that create a responsive grid layouts-->
+            <!--4 columns in large screens, 12 columns in Medium sized screens-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Private Martial Arts</h5>
+                    <small>Individual</small>
+                    <br><br>
+                    <span class="h2">£15.00</span>/ per hour
+                    <br><br><br><br><br><br>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                      href="/Module2/d-sign-up-form.html">Enroll</a></button>
+                </div>
+              </div>
+            </div>
+            <!--A bootstrap code that create a responsive grid layouts-->
+            <!--4 columns in large screens, 12 columns in Medium sized screens-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title" style="font-size: 23px;">Junior Membership(Kids Allowed)</h5>
+                    <small>Individual</small>
+                    <br><br>
+                    <span class="h2">£25.00</span>/per session
+                    <br><br>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor" class="check" viewBox="0 0 16 16">
+                          <!--Placed some svg links from a bootstrap code-->
+                          <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                        </svg> Any Martial arts Sessionss</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                      href="/Module2/d-sign-up-form.html">Enroll</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Container of the last 3 cards in the program-->
+        <div class="container-fluid">
+          <h1>Specialists Courses & Fitness Training</h1>
+          <!--Container of the first 3 cards with a bootstrap code and a padding of 0-->
+          <div class="container p-0">
+            <div class="row">
+              <!--A bootstrap code that create a responsive grid layouts-->
+              <!--4 columns in large screens, 12 columns in Medium sized screens-->
+              <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-center p-3">
+                      <h5 class="card-title" style="font-size: 18px;">Six Week Beginners/Self Defense Course</h5>
+                      <small>Individual</small>
+                      <br><br>
+                      <span class="h2">£180.00</span>/per week
+                      <br><br>
+                    </div>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="check" viewBox="0 0 16 16">
+                        <!--Placed some svg links from a bootstrap code-->
+                        <path
+                          d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                      </svg> 2 x 1-hour Session per week</li>
+                  </ul>
+                  <div class="card-body text-center">
+                    <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                        href="/Module2/d-sign-up-form.html">Enroll</a></button>
+                  </div>
+                </div>
+              </div>
+              <!--A bootstrap code that create a responsive grid layouts-->
+              <!--4 columns in large screens, 12 columns in Medium sized screens-->
+              <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-body">
+                    <div class="text-center p-3">
+                      <h5 class="card-title">Use for Fitness Room</h5>
+                      <small>Individual</small>
+                      <br><br>
+                      <span class="h2">£6.00</span>/ per visit
+                      <br><br>
+                    </div>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <div class="card-body text-center">
+                      <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                          href="/Module2/d-sign-up-form.html">Enroll</a></button>
+                    </div>
+                </div>
+              </div>
+              <!--A bootstrap code that create a responsive grid layouts-->
+              <!--4 columns in large screens, 12 columns in Medium sized screens-->
+              <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-body">
+                    <div class="text-center p-3">
+                      <h5 class="card-title">Fitness Training</h5>
+                      <small>Individual</small>
+                      <br><br>
+                      <span class="h2">£35.00</span>/per hour
+                      <br><br>
+                    </div>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <div class="card-body text-center">
+                      <button class="btn btn-outline-primary btn-lg" style="border-radius:30px"><a
+                          href="/Module2/d-sign-up-form.html">Enroll</a></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+</body>
+<!--This is the jQuery footer of the page-->
+<footer id="footer"></footer>
+<!-- jQuery Script for the header and footer html file page-->
+<script>
+  $(document).ready(function () {
+    $('#header').load('1-header&footer/common-header.html');
+    $('#footer').load('1-header&footer/common-footer.html');
+  });
+</script>
+<!-- jQuery Script for the loading page-->
+<script>
+  function hideLoader() {
+    $('.page-loader').fadeOut('slow');
+  }
+</script>
+<!--When the page finishes loading, the loading animation will fade out slowly-->
+
+<body onload="hideLoader()"></body>
+
+</html>
